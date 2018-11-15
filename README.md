@@ -2,15 +2,26 @@
 
 Installation
 ----
-1. After cloning repository in your environment please create MySQL database first.
-2. Go to project root and create .env config from .env.example
-3. Change database connection settings
-4. Run migration command also from root of project
+* After cloning repository in your environment please create MySQL database first.
+* Go to project root and create .env config from .env.example
+* Change database connection settings
+
+* Run composer install
+```
+composer install 
+```
+
+* Don't forget to generate application key
+```
+php artisan key:generate 
+```
+
+* Run migration command also from root of project
 ```
 php artisan migrate
 ```
 
-Run serve command or setup your local web server
+* Run serve command or setup your local web server
 ```
 php artisan serve
 ```

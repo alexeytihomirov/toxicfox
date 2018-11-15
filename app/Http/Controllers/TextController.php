@@ -18,7 +18,7 @@ class TextController
 
         // This function is splitting text by words and removing commas, dots etc
         // WARNING! It also removes utf8 characters. There are several workarounds but i think as a simple example
-        // this would be enough
+        // this would be enough. Also hyphen is counted as word.
         $words = str_word_count($text, 1);
 
         if (!$words) {
@@ -40,6 +40,6 @@ class TextController
 
     public function test()
     {
-        echo '<form method="post" action="/text/post"><textarea name="text"></textarea><input type="submit"></form>';
+        return view('text.test');
     }
 }
