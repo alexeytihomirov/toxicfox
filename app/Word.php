@@ -6,9 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Word extends Model
 {
-    const TABLE = 'words';
-
-    protected $table = self::TABLE;
+    protected $table = 'words';
     protected $primaryKey = 'word';
     public $timestamps = false;
 
